@@ -60,7 +60,7 @@ export default function WorkOrderModal({ isOpen, onClose, onSuccess }: WorkOrder
   }
 
   const requirements = calculateRequiredMaterials()
-  const canProduce = requirements.length > 0 && requirements.every(r => r.isEnough)
+  const canProduce = requirements.length > 0 && requirements.every((r: any) => r.isEnough)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
