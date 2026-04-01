@@ -173,7 +173,7 @@ export default function WorkOrderModal({ isOpen, onClose, onSuccess }: WorkOrder
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {requirements.map((req: any, idx) => (
+                    {requirements.map((req: any, idx: number) => (
                       <div key={idx} className={`p-4 rounded-2xl border ${req.isEnough ? 'bg-emerald-50 border-emerald-100' : 'bg-red-50 border-red-100'} flex items-center justify-between`}>
                         <div className="flex flex-col">
                           <span className="text-xs font-black text-gray-400 uppercase tracking-widest mb-1">{req.name}</span>
